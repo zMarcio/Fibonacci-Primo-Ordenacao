@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregavel 2</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="/js/script.js"></script>
+    <style>
+        .red{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blue{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+        }
+        h2 {
+            text-align: center;
+            height: auto;
+            width: auto; 
+        }
+        body{
+            background-image: url(data:image/png;base64,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); 
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="red">Entregavel 2 </h1>
+    <script>
+        function fibonacci(termo) {
+            let resultado = ""
+            var termo = document.getElementById('fibinput').value;
+            var penultimo=0, ultimo=1;
+            var numero;   
+            for(var count=0 ; count<=termo ; count++){
+                numero = ultimo + penultimo;
+                penultimo = ultimo;
+                ultimo = numero;
+                resultado += numero + " ";
+            }
+            return resultado;
+        }
+        
+
+        function somatorio(conjuntoDeNumeros) {
+
+            var soma = 0;
+            var numeros = conjuntoDeNumeros.split(' ');
+
+            for (var i = 0; i < numeros.length; i++) {
+                numeros[i] = parseInt(numeros[i]);
+            }
+
+            for (var i = 0; i < numeros.length; i++) {
+                soma += numeros[i];
+            }
+            return soma;
+
+        }
+
+        function ehPrimo(n) {
+
+            for (i = n - 1; i > 1; i--) {
+                if (n % i == 0) {
+                    return "Não primo";
+                }
+            }
+            return "Primo";
+        }
+
+        function maximoDivisor(entrada) {
+            mdc = 0;
+
+            var num_separado = entrada.split(' ');
+
+            for (var i = 0; i < num_separado.length; i++) {
+                num_separado[i] = parseInt(num_separado[i]);
+            }
+
+            var a = num_separado[0];
+            var b = num_separado[1];
+
+            if (a < b) {
+                aux = a;
+                a = b;
+                b = aux;
+            }
+
+            for (i = 1; i < a; i++) {
+                if (a % i == 0 && b % i == 0) {
+                    mdc = i;
+                }
+            }
+
+            return mdc;
+        }
+
+        function contagem(n) {
+            var qtd = 0;
+
+            var numeros = n.split(' ');
+
+            for (i = 0; i < numeros.length; i++) {
+                if (!(numeros[i].includes('.') || numeros[i].includes(','))) {
+                    qtd++;
+                }
+            }
+
+            return qtd;
+        }
+
+        function swap(items, leftIndex, rightIndex) {
+            var temp = items[leftIndex];
+            items[leftIndex] = items[rightIndex];
+            items[rightIndex] = temp;
+        }
+
+        function partition(items, left, right) {
+            var pivot = items[Math.floor((right + left) / 2)],
+                i = left,
+                j = right;
+            while (i <= j) {
+                while (items[i] < pivot) {
+                    i++;
+                }
+                while (items[j] > pivot) {
+                    j--;
+                }
+                if (i <= j) {
+                    swap(items, i, j);
+                    i++;
+                    j--;
+                }
+            }
+            return i;
+        }
+
+        function quickSort(items, left, right) {
+            var index;
+            if (items.length > 1) {
+                index = partition(items, left, right);
+                if (left < index - 1) {
+                    quickSort(items, left, index - 1);
+                }
+                if (index < right) {
+                    quickSort(items, index, right);
+                }
+            }
+            return items;
+        }
+
+        function ordenar(arr) {
+            var vetor = arr.split(' ');
+            for (let i = 0; i < vetor.length; i++) {
+                vetor[i] = parseInt(vetor[i]);
+            }
+            for (let i = 0; i < vetor.length; i++) {
+                for (let j = 0; j < vetor.length - 1 - i; j++) {
+                    if (vetor[i] > vetor[i + 1]) {
+                        let temp = vetor[i];
+                        vetor[i] = vetor[i + 1];
+                        vetor[i + 1] = temp;
+                    }
+                }
+            }
+            return vetor;
+        }
+    </script>
+
+    <div class="container">
+        <div class="blue">
+        <h2 style="color: black;">Fibonacci <input type="text" id="fibinput"> <button style="color: red" onclick="alert(fibonacci(document.getElementById('fibinput').value))">Calcular</button></h2>
+        <h2 style="color: black;">Somar Números <input type="text" id="somainput"> <button style="color: red" onclick="alert(somatorio(document.getElementById('somainput').value))">Calcular</button></h2>
+        <h2 style="color: black;">É Primo? <input type="text" id="primoinput"> <button style="color: red" onclick="alert(ehPrimo(document.getElementById('primoinput').value))">Calcular</button></h2>
+        <h2 style="color: black;">Maximo Divisor <input type="text" id="mdcinput"> <button style="color: red" onclick="alert(maximoDivisor(document.getElementById('mdcinput').value))">Calcular</button></h2>
+        <h2 style="color: black;">Cont Inteiros <input type="text" id="contarinput"> <button style="color: red" onclick="alert(contagem(document.getElementById('contarinput').value))">Contar</button></h2>
+        <h2 style="color: black;">Ordenação <input type="text" id="ordenarinput"> <button style="color: red" onclick="alert(ordenar(document.getElementById('ordenarinput').value))">Ordenar</button></h2>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
